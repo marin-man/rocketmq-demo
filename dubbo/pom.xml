@@ -2,15 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>rocketmq-demo</artifactId>
+        <groupId>com.manman</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.manman</groupId>
-    <artifactId>rocketmq-demo</artifactId>
+    <artifactId>dubbo</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>base</module>
-        <module>pay</module>
-        <module>dubbo</module>
+        <module>interface</module>
+        <module>provider</module>
     </modules>
+
+
 </project>
